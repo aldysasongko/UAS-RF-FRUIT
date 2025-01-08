@@ -9,9 +9,9 @@ st.title('Fruit Prediction App')
 # Input Form
 diameter = st.slider('Lebar (cm)', min_value=0.0,max_value = 10.0, format="%.2f")
 weight = st.slider('Berat (kg)', min_value=0.0,max_value = 150.0, format="%.2f")
-red = st.number_input('Merah', min_value=0.0, format="%.2f")
-green = st.number_input('Hijau', min_value=0.0, format="%.2f")
-blue = st.number_input('Biru', min_value=0.0, format="%.2f")
+red = st.number_input('Merah', min_value=0.0)
+green = st.number_input('Hijau', min_value=0.0)
+blue = st.number_input('Biru', min_value=0.0)
 
 if st.button('Prediksi'):
     if diameter > 0 and weight > 0 and red > 0 and green > 0 and blue > 0:
