@@ -4,11 +4,10 @@ import joblib
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 
-st.title('Fish Species Prediction App')
-st.write("Masukkan panjang, berat, dan rasio panjang terhadap berat untuk memprediksi spesies ikan.")
+st.title('Fruit Prediction App')
 
 # Input Form
-diameter = st.slider('Panjang (cm)', min_value=0.0,max_value = 10.0, format="%.2f")
+diameter = st.slider('Lebar (cm)', min_value=0.0,max_value = 10.0, format="%.2f")
 weight = st.slider('Berat (kg)', min_value=0.0,max_value = 150.0, format="%.2f")
 red = st.number_input('Merah', min_value=0.0, format="%.2f")
 green = st.number_input('Hijau', min_value=0.0, format="%.2f")
